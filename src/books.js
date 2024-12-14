@@ -5,7 +5,7 @@ const BooksService = {
         books.push(dataBook);
     },
     getAllbooks: () => {
-        return books.map(({ id, name, publisher }) => ({ id, name, publisher }));
+        return books;
     },
     getBookById: (id) => {
         return books.find((book) => book.id === id);
